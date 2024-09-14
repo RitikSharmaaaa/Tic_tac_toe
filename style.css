@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+    font-family: "SUSE", sans-serif;
+
+}
+.container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 650px) {
+    .button {
+        font-size: 1rem;
+    }
+    .game {
+        height: 250px;
+        width: 250px;
+        gap: 5px;
+    }
+}
+
+.game{
+    max-width: 500px;
+    max-height: 500px;
+    width: 90vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    height: auto;
+    aspect-ratio: 1/1;
+}
+
+.button{
+    border-radius: 10px;
+    /* flex-shrink: 0; */
+    cursor: pointer;
+    user-select: none;
+    /* aspect-ratio: 1/1; */
+    background-color: #CDC2A5;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    font-size: 6rem;
+    color: #295F98;
+}
+
+.same{
+    background-color: rgb(29, 27, 27);
+    color: aliceblue;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+.hide{
+    display: none;
+}
+
+.winner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+
+ }
+.hide{
+    display: none;
+}
